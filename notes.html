@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Rounding Error Games / Deciduous: Emergent / Release Notes</title>
+    <link rel="icon" type="image/png" href="favicon.jpeg">
+    <style>
+      body {
+          background-color: #EBEBFFFF;
+      }
+      .content {
+          margin:     auto;
+          width:      640px;
+      }
+      .center {
+          .content;
+          text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="content">
+      <p class="center">
+        Deciduous: Emergent
+      </p>
+      <p class="center">
+        Release Notes
+      </p>
+      <br>
+      v0.1.12 release code 8 released 2025-03-26
+      <ul>
+        <li>Limit modal size to 75% screen size, to avoid conflict with the navigation bar.</li>
+        <li>GAME MENU: NEW GAME at top, LOAD far from DELETE, created instead of updated.</li>
+        <li>DEBUG redesign: only show db filename, not full path, tune for screen size.</li>
+        <li>Removed arch from copyright text for screen size.  The arch is in DEBUG.</li>
+        <li>Fixed NoTicksFound  when the tutorial creates the 1st world.</li>
+        <li>Moved RESET GOALS to DEBUG.</li>
+      </ul>
+      <br>
+      v0.1.11 release code 7 released 2025-03-26
+      <ul>
+        <li>From 0.1.10, egui_keyboard does not work.  Game name edit feature disabled.</li>
+        <li>From 0.1.10, multi-touch for drag works well.  Keeping it.</li>
+        <li>Larger font, revised dialogs.</li>
+        <li>Restored x-axis label in metrics plot.</li>
+        <li>ColorMode w/ Standard+Debug options available provisionally in DEBUG menu.</li>
+        <li>Changed type tick from usize to i64, anticipating 32-bit arch and maybe extend worlds back in time (to negative tick) in the distant future.</li>
+      </ul>
+      <br>
+      v0.1.10 release code 6 released 2025-03-23
+      <ul>
+        <li>[GAME MENU] is scrollable.</li>
+        <li>Metrics history loads and is fork-aware.  Loads slowly to test whether there is any fun in the metrics load behavior being more exposed.</li>
+        <li>WALL cells available in the palette.  Choose your own adventure!</li>
+        <li>Unverified: Temporary egui_keyboard, while waiting for winit/egui to fix.</li>
+        <li>Unverified: Testing multi-touch for dragging flats region on Android. Drag on Mac and Window is still via primary button.</li>
+      </ul>
+      <br>
+        v0.1.9 release code 5 released 2025-03-20
+      <ul>
+        <li>Changed [PRUNE A] to [SWAP A B].</li>
+        <li>Added tick indicator to GAME MENU.</li>
+        <li>GAME MENU supports name change.</li>
+        <li>Clean "coming soon" errors on time travel instead of panic.</li>
+        <li>Re-added 32-bit arches x86 and armeabi-v7a, which were excluded from 0.1.8.</li>
+      </ul>
+      <br>
+      v0.1.8 release code 4 released 2025-03-19
+      <ul>
+        <li>Tweaking colors in PREFERENCES changes colors in metrics, world, and palette.</li>
+        <li>Cleaned out some pointless debug buttons and other UI.</li>
+        <li>Split NEW GAME menu out from GAME MENU.</li>
+        <li>Supporting PRUNE A and FORK B A.</li>
+        <li>Cut the shuffle item from palette.</li>
+      </ul>
+      <br>
+      v0.1.7 release code 3 released 2025-03-17
+      <ul>
+        <li>minSdkVersion dropped from 31 way down to 21, supporting way back to Android 5 (Lollipop, 2014)</li>
+      </ul>
+      <br>
+      v0.1.6 release code 2 released 2025-03-16
+      <ul>
+        <li>Critter art type no longer part of save file format.  Save format broken, but the many future art changes won't break save format.</li>
+        <li>New sounds to test in debug menu.  Sourcing sounds from jsfxr (https://sfxr.me/) into the sfxr library in-game, so I can iterate fast.  To get to the debug menu, click on the copyright text.</li>
+        <li>Metrics panel display restores from save file into RRD.</li>
+        <li>Time travel and time replay still broken.</li>
+      </ul>
+      <br>
+      v0.1.5 aka 1.0 release code 1 released 2025-03-11
+      <ul>
+        <li>deciduous-v0.1.5</li>
+        <li>first trial upload to Google Play Console for internal testing</li>
+        <li>time replay and time travel not implemented, will crash</li>
+        <li>database size not limited</li>
+        <li>save game is automatic and always on</li>
+        <li>load game is implemented and working</li>
+        <li>debug symbols not included</li>
+      </ul>
+    </div>
+
+  </body>
+</html>
