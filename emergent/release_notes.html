@@ -35,6 +35,21 @@
       <p>
         Deciduous will launch in the Android Play Store in Summer 2025.
       </p>
+
+      <br>
+      v0.1.14 version code 10 released 2025-03-28
+      <ul>
+        <li>
+          Temp bump minSdkVersion from 21 (Android 5.0) to 33 (Android 13) to test C3_Pro.  Breaks build for older devices.
+        </li>
+        <li>
+          Temp small palette art to minimize layout problems.  Real fix still pending.
+        </li>
+        <li>
+          First exploration of select-from-world, in form of a temp palette icon in the center bar which tracks the mouse.
+        </li>
+      </ul>
+
       <br>
       v0.1.13 version code 9 released 2025-03-27
       <ul>
@@ -43,7 +58,9 @@
         <li>Modals build up in a "stack": an originating modal remains visible behind any spawned confirmation or error modals.</li>
         <li>Added some debug beachhead to the "dead zone", the center of the center bar.</li>
         <li>Bump targetSdkVersion from 34 (Android 14) to 35 (Android 16).</li>
+        <li>Testing TARGET_FRAMES_PER_SECOND drop from 30 Hz to 15 Hz.  Feels smooth!</li>
       </ul>
+
       <br>
       v0.1.12 version code 8 released 2025-03-26
       <ul>
