@@ -37,7 +37,30 @@
       </p>
 
       <br>
-      v0.1.24 version code 22 released 2025-05-05
+      v0.1.25 released 2025-05-09
+      <ul>
+        <li>
+          Any mismatch in REPLAY is resolved in favor of db over sim.
+        </li>
+        <li>
+          Cut METRICS button, only metric available is population by species.
+        </li>
+        <li>
+          Big reorg of click, drag, and zoom code.
+        </li>
+        <li>
+          Introduce DRAW, line-oriented draw gestures.
+        </li>
+        <li>
+          Introduce SAMPLE, secondary button click sample.
+        </li>
+        <li>
+          Introduce UNDO, button for quick rewind+fork.
+        </li>
+      </ul>
+
+      <br>
+      v0.1.24 released 2025-05-05
       <ul>
         <li>
           Heavy revision of struct Cell and struct Evolve.
@@ -60,7 +83,7 @@
       </ul>
 
       <br>
-      v0.1.23 version code 21 released 2025-04-30
+      v0.1.23 released 2025-04-30
       <ul>
         <li>
           Substantial rewrite of game statistics gathering.
@@ -80,7 +103,7 @@
       </ul>
 
       <br>
-      v0.1.22 version code 20 released 2025-04-24
+      v0.1.22 released 2025-04-24
       <ul>
         <li>
           Clicking REWIND and TIME TRAVEL clamp to 0,max instead of error.
@@ -94,7 +117,7 @@
       </ul>
 
       <br>
-      v0.1.21 version code 19 released 2025-04-22
+      v0.1.21 released 2025-04-22
       <ul>
         <li>
           Full history: https://www.roundingerrorgames.com/emergent/release_notes.html
@@ -117,12 +140,7 @@
       </ul>
 
       <br>
-      Version code 18 burned 2025-04-22, when I mistakenly shipped a second v0.1.20.
-      <ul>
-      </ul>
-
-      <br>
-      v0.1.20 version code 17 released 2025-04-16
+      v0.1.20 released 2025-04-16
       <ul>
         <li>
           Full history: https://www.roundingerrorgames.com/emergent/release_notes.html
@@ -145,7 +163,7 @@
       </ul>
 
       <br>
-      v0.1.19 version code 16 released 2025-04-16
+      v0.1.19 released 2025-04-16
       <ul>
         <li>
           Out-of-the-box Android backup solutions for max out at 25 MB.
@@ -159,7 +177,7 @@
       </ul>
 
       <br>
-      v0.1.18 version code 15 released 2025-04-09
+      v0.1.18 released 2025-04-09
       <ul>
         <li>
           Storage moved from internal to external storage.
@@ -179,7 +197,7 @@
       </ul>
 
       <br>
-      v0.1.17 version code 14 released 2025-04-09
+      v0.1.17 released 2025-04-09
       <ul>
         <li>
           Fixed crash when zooming out on empty world.
@@ -199,12 +217,7 @@
       </ul>
 
       <br>
-      Skipped version code 13 on 2025-04-09, burned in signing key loss snafu.
-      <ul>
-      </ul>
-
-      <br>
-      v0.1.16 version code 12 released 2025-04-02
+      v0.1.16 released 2025-04-02
       <ul>
         <li>
           Small layout tweaks in the center bar.
@@ -221,7 +234,7 @@
       </ul>
 
       <br>
-      v0.1.15 version code 11 released 2025-03-29
+      v0.1.15 released 2025-03-29
       <ul>
         <li>
           minSdkVersion back to 21 (Android 5.0).  33 did not help the C3_Pro.
@@ -238,7 +251,7 @@
       </ul>
       
       <br>
-      v0.1.14 version code 10 released 2025-03-28
+      v0.1.14 released 2025-03-28
       <ul>
         <li>
           Temp bump minSdkVersion from 21 (Android 5.0) to 33 (Android 13) to test C3_Pro.  Breaks build for older devices.
@@ -252,7 +265,7 @@
       </ul>
 
       <br>
-      v0.1.13 version code 9 released 2025-03-27
+      v0.1.13 released 2025-03-27
       <ul>
         <li>Small font for copyright text, added the arch back in.</li>
         <li>Time travel is back! Via clicking on the metric graph.  Warning: the old future is lost!</li>
@@ -263,7 +276,7 @@
       </ul>
 
       <br>
-      v0.1.12 version code 8 released 2025-03-26
+      v0.1.12 released 2025-03-26
       <ul>
         <li>Limit modal size to 75% screen size, to avoid conflict with the navigation bar.</li>
         <li>GAME MENU: NEW GAME at top, LOAD far from DELETE, created instead of updated.</li>
@@ -273,7 +286,7 @@
         <li>Moved RESET GOALS to DEBUG.</li>
       </ul>
       <br>
-      v0.1.12 version code 8 released 2025-03-26
+      v0.1.12 released 2025-03-26
       <ul>
         <li>Limit modal size to 75% screen size, to avoid conflict with the navigation bar.</li>
         <li>GAME MENU: NEW GAME at top, LOAD far from DELETE, created instead of updated.</li>
@@ -283,7 +296,7 @@
         <li>Moved RESET GOALS to DEBUG.</li>
       </ul>
       <br>
-      v0.1.11 version code 7 released 2025-03-26
+      v0.1.11 released 2025-03-26
       <ul>
         <li>From 0.1.10, egui_keyboard does not work.  Game name edit feature disabled.</li>
         <li>From 0.1.10, multi-touch for drag works well.  Keeping it.</li>
@@ -293,7 +306,7 @@
         <li>Changed type tick from usize to i64, anticipating 32-bit arch and maybe extend worlds back in time (to negative tick) in the distant future.</li>
       </ul>
       <br>
-      v0.1.10 version code 6 released 2025-03-23
+      v0.1.10 released 2025-03-23
       <ul>
         <li>[GAME MENU] is scrollable.</li>
         <li>Metrics history loads and is fork-aware.  Loads slowly to test whether there is any fun in the metrics load behavior being more exposed.</li>
@@ -302,7 +315,7 @@
         <li>Unverified: Testing multi-touch for dragging flats region on Android. Drag on Mac and Window is still via primary button.</li>
       </ul>
       <br>
-        v0.1.9 version code 5 released 2025-03-20
+        v0.1.9 released 2025-03-20
       <ul>
         <li>Changed [PRUNE A] to [SWAP A B].</li>
         <li>Added tick indicator to GAME MENU.</li>
@@ -311,7 +324,7 @@
         <li>Re-added 32-bit arches x86 and armeabi-v7a, which were excluded from 0.1.8.</li>
       </ul>
       <br>
-      v0.1.8 version code 4 released 2025-03-19
+      v0.1.8 released 2025-03-19
       <ul>
         <li>Tweaking colors in PREFERENCES changes colors in metrics, world, and palette.</li>
         <li>Cleaned out some pointless debug buttons and other UI.</li>
@@ -320,12 +333,12 @@
         <li>Cut the shuffle item from palette.</li>
       </ul>
       <br>
-      v0.1.7 version code 3 released 2025-03-17
+      v0.1.7 released 2025-03-17
       <ul>
         <li>minSdkVersion dropped from 31 way down to 21, supporting way back to Android 5 (Lollipop, 2014)</li>
       </ul>
       <br>
-      v0.1.6 version code 2 released 2025-03-16
+      v0.1.6 released 2025-03-16
       <ul>
         <li>Critter art type no longer part of save file format.  Save format broken, but the many future art changes won't break save format.</li>
         <li>New sounds to test in debug menu.  Sourcing sounds from jsfxr (https://sfxr.me/) into the sfxr library in-game, so I can iterate fast.  To get to the debug menu, click on the copyright text.</li>
@@ -333,7 +346,7 @@
         <li>Time travel and time replay still broken.</li>
       </ul>
       <br>
-      v0.1.5 aka 1.0 version code 1 released 2025-03-11
+      v0.1.5 aka 1.0 released 2025-03-11
       <ul>
         <li>deciduous-v0.1.5</li>
         <li>first trial upload to Google Play Console for internal testing</li>
